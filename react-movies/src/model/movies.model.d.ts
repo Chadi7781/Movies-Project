@@ -2,6 +2,7 @@ export interface movieDTO {
  
     id: number;
     title: string;
+    category: string;
     poster: string;
 }
 

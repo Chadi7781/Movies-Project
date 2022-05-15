@@ -4,3 +4,13 @@
     flex-direction: row;
     align-items: center;
 }
+
+.card {
+    display: flex;
+    background-color: gray;
+    width: 50%;
+    border-radius: 50px;
+    opacity: 0.5;
+    /* align-items: center;
+    justify-content: flex-start; */
+}
