@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "reactstrap";
 import { movieDTO } from "../../model/movies.model";
+import Loading from "../utils/Loading/Loading";
 
 import css from "./IndividualMovie.module.css";
 
