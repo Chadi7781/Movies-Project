@@ -4,6 +4,7 @@ import { Badge, Col, Container, Row } from "reactstrap";
 import "./App.css";
 
 import IndexGenres from "./components/navbar/IndexGenres";
+import NavBar from "./components/navbar/Navbar";
 import { landingPageDTO, movieDTO } from "./model/movies.model";
 import routes from "./Routes/route-config";
 
@@ -12,6 +13,7 @@ export function App() {
 
   return (
     <>
+      <NavBar />
       <BrowserRouter>
         <Container fluid>
           <Switch>
