@@ -6,16 +6,15 @@ import {
   NavbarBrand,
   NavbarToggler,
   NavItem,
-  NavLink,
 } from "reactstrap";
 
+import { Link, NavLink } from "react-router-dom";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div style={{ display: "block", width: 550, padding: 30 }}>
-      <h5>MyMovies</h5>
+    <div style={{ display: "block", width: "100%", padding: 30 }}>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Brand</NavbarBrand>
+        <NavLink to="/">MyMovies</NavLink>
         <NavbarToggler
           onClick={() => {
             setIsOpen(!isOpen);
@@ -24,13 +23,19 @@ export default function NavBar() {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#">Home</NavLink>
+              <NavLink className="nav-link" to="/">
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Login</NavLink>
+              <NavLink className="nav-link" to="/genres">
+                Genres
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Signup</NavLink>
+              <NavLink className="nav-link" to="/genres">
+                Signup
+              </NavLink>{" "}
             </NavItem>
           </Nav>
         </Collapse>

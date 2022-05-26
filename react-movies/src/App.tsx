@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Badge, Col, Container, Row } from "reactstrap";
 import "./App.css";
 
-import IndexGenres from "./components/navbar/IndexGenres";
 import NavBar from "./components/navbar/Navbar";
 import { landingPageDTO, movieDTO } from "./model/movies.model";
 import routes from "./Routes/route-config";
@@ -13,14 +12,20 @@ export function App() {
 
   return (
     <>
-      <NavBar />
       <BrowserRouter>
+        <NavBar />
         <Container fluid>
           <Switch>
             {routes.map((routes) => (
-              <Route key={routes.path} path={routes.path} exact={routes.exact}>
-                <routes.component />
-              </Route>
+              <>
+                <Route
+                  key={routes.path}
+                  path={routes.path}
+                  exact={routes.exact}
+                >
+                  <routes.component />
+                </Route>
+              </>
             ))}
           </Switch>
         </Container>

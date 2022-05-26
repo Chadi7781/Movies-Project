@@ -2,3 +2,13 @@ body {
     background-color: "#000"
     
 }
+
+.btnPrimary {
+    width:auto;
+    height:auto;
+    border: 1px solid blue;
+    border-radius:2em;
+    padding: .6em 1.5em;
+
+    font-size: 15px;
+}
