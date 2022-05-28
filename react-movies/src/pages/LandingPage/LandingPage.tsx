@@ -4,7 +4,6 @@ import Carousel from "../../components/carousel/Carousel";
 import IndividualMovie from "../../components/movies/IndividualMovie";
 import MoviesList from "../../components/movies/MoviesList";
 import { landingPageDTO } from "../../model/movies.model";
-import "./LandingPage.module.scss";
 export default function LandingPage() {
   const [movies, setMovies] = useState<landingPageDTO>({});
 
@@ -59,17 +58,7 @@ export default function LandingPage() {
   return (
     <>
       <div>
-        <section>
-          <h1>
-            Take control of your<div>customer support</div>
-          </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div className="cta">
-            <button>Get started</button>
-            <button>Live demo</button>
-          </div>
-        </section>
-
+        hhhhhhhh
         <Row style={{ padding: "30px 30px 30px 30px" }}>
           <Badge color="danger">
             <h3> In Theaters</h3>

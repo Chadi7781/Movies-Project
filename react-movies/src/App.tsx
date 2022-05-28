@@ -14,18 +14,13 @@ export function App() {
     <>
       <BrowserRouter>
         <NavBar />
+
         <Container fluid>
           <Switch>
             {routes.map((routes) => (
-              <>
-                <Route
-                  key={routes.path}
-                  path={routes.path}
-                  exact={routes.exact}
-                >
-                  <routes.component />
-                </Route>
-              </>
+              <Route path={routes.path} exact={routes.exact}>
+                <routes.component />
+              </Route>
             ))}
           </Switch>
         </Container>

@@ -13,7 +13,7 @@ const routes = [
     },
     {
         path: '/', component:landingPage,exact:true
-    },
+    }
     // {
     //     path:"/genres/create", component:CreateGenres
     // },
