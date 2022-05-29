@@ -33,8 +33,23 @@ export default function NavBar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/genres">
-                Signup
+              <NavLink className="nav-link" to="/movie/filter">
+                Filter Movies
+              </NavLink>{" "}
+            </NavItem>
+            <NavItem>
+              <NavLink className="nav-link" to="/actors">
+                Actors
+              </NavLink>{" "}
+            </NavItem>
+            <NavItem>
+              <NavLink className="nav-link" to="/movietheaters">
+                Movie Theaters
+              </NavLink>{" "}
+            </NavItem>
+            <NavItem>
+              <NavLink className="nav-link" to="/movie/create">
+                Create a Movie
               </NavLink>{" "}
             </NavItem>
           </Nav>

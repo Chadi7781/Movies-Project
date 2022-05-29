@@ -12,19 +12,21 @@ export function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <NavBar />
+      <NavBar />
 
-        <Container fluid>
-          <Switch>
-            {routes.map((routes) => (
-              <Route path={routes.path} exact={routes.exact}>
-                <routes.component />
-              </Route>
-            ))}
-          </Switch>
-        </Container>
-      </BrowserRouter>
+      <Container fluid>
+        <Switch>
+          {routes.map((routes: any) => (
+            <Route
+              key={routes.path}
+              exact
+              path={routes.path}
+            >
+              <routes.component />
+            </Route>
+          ))}
+        </Switch>
+      </Container>
     </>
   );
 }

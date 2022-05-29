@@ -58,7 +58,6 @@ export default function LandingPage() {
   return (
     <>
       <div>
-        hhhhhhhh
         <Row style={{ padding: "30px 30px 30px 30px" }}>
           <Badge color="danger">
             <h3> In Theaters</h3>

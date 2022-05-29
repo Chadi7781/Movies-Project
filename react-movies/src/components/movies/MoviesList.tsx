@@ -16,6 +16,8 @@ export default function MoviesList(props: moviesListProps) {
       </div>
     </GenericList>
   );
+
+  // chadi troudi la vie est un jeu et la mort gagne
 }
 
 interface moviesListProps {

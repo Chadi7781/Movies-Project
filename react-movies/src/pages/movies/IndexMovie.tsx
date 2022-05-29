@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 
-export default function IndexGenres() {
+export default function IndexMovie() {
   return (
     <div>
-      <h3> Genres</h3>
+      <h3> Movie</h3>
       <Link
-        to="/genres/create"
+        to="/movie/create"
         className="btnPrimary"
         style={{ textDecoration: "none" }}
       >
-        Create Genre
+        Create Movie
       </Link>
     </div>
   );
